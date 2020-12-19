@@ -1,0 +1,25 @@
+<mat-menu #appMenu="matMenu" xPosition="after" yPosition="below">
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">Starter</button>
+  <button mat-menu-item [matMenuTriggerFor]="sub1Menu">Main Course</button>
+  <button mat-menu-item [matMenuTriggerFor]="sub2Menu">Desserts</button>
+</mat-menu>
+
+<button class="center" mat-flat-button color="primary" [matMenuTriggerFor]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu">
+<button mat-menu-item>Samosa</button>
+<button mat-menu-item>Burger</button>
+<button mat-menu-item>Sandwich</button>
+</mat-menu>
+
+<mat-menu #sub1Menu="matMenu">
+<button mat-menu-item>Chicken Biryani</button>
+<button mat-menu-item>Veg Biryani</button>
+<button mat-menu-item>Triple Schezwan</button>
+</mat-menu>
+
+<mat-menu #sub2Menu="matMenu">
+<button mat-menu-item>Gulab Jamum</button>
+<button mat-menu-item>Lassi</button>
+<button mat-menu-item>Ice Creame</button>
+</mat-menu>
